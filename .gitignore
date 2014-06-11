@@ -11,7 +11,7 @@
 /vendor/*
 !/vendor/ember-shim.js
 !/vendor/qunit-shim.js
-
+!/vendor/admin-lte
 # misc
 /.sass-cache
 /connect.lock
