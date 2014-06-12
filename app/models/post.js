@@ -9,6 +9,7 @@ var Post = DS.Model.extend(Ember.Validations.Mixin, {
   isPublic: boolean,
   createDate: date,
   modifyDate: date,
+  something:[],
   author: str,
   tags: [],
   validations: {

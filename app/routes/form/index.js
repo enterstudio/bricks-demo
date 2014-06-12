@@ -8,5 +8,14 @@ export default Ember.Route.extend({
       model.category=catrgory;
       return model;
     });
+  },
+  setupController:function(controller,model){
+    this._super(controller, model);
+     controller.set('fruits',[
+       {name:'apple'},
+       {name:'bannana'},
+       {name:'orange'}
+     ]);
   }
+
 });
