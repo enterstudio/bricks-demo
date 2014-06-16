@@ -20,15 +20,6 @@ export default Ember.Route.extend({
   actions:{
     translate:function(lang){
       BricksUI.I18n.setByLang(lang,true);
-      var translations=Ember.I18n.translations;
-      for(var prop in translations){
-        if(Ember.canInvoke(translations,prop)){
-          delete translations[prop];
-        }
-      }
-
-//      this.transitionTo('loading');
-//      this.transitionTo(Ember.get(this,'routeName'));
     }
   }
 

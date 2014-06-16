@@ -12,9 +12,11 @@
 
 <section class="content">
 <div class="row">
-    <div class="btn-group">
-        <button type="button" class="btn btn-default" {{action translate 'zh-CN'}}>中文</button>
-        <button type="button" class="btn btn-default" {{action translate 'en-US'}}>ENGLISH</button>
+    <div class="col-md-6">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default" {{action translate 'zh-CN'}}>中文</button>
+            <button type="button" class="btn btn-default" {{action translate 'en-US'}}>ENGLISH</button>
+        </div>
     </div>
 </div>
 <div class="row">
@@ -28,27 +30,26 @@
         <!-- form start -->
         <form role="form">
             <div class="box-body">
+
                 {{#form-for model wrapper="bootstrap"}}
                     {{input title label="标题"}}
-                    {{input content1 label="内容"}}
+                    {{input contents label="内容" as="text"}}
                     {{input password placeholder="请输入密码"}}
                     {{input lastName}}
                     {{checkbox something modelBinding="model" propertyPath="something" elementsBinding="fruits" labelPath="name"}}
                     {{radio something modelBinding="model" propertyPath="something" elementsBinding="fruits" labelPath="name"}}
                     {{input createDate}}
                     {{#input title withValidation=true}}
-                        {{label-field propertyBinding="view.property" textBinding="view.fieldLabel"}}
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                             {{input-field propertyBinding="view.property" inputOptionsBinding="view.inputOptionsValues"}}
                         </div>
-                        {{#if view.showError}}
-                            {{error-field propertyBinding="view.property"}}
-                        {{/if}}
-                        {{#if view.hint}}
-                            {{hint-field propertyBinding="view.property" textBinding="view.hint"}}
-                        {{/if}}
                     {{/input}}
+
+                    {{#input title withValidation=true}}
+                         {{bu-editor value=title valueType="contentTxt"}}
+                    {{/input}}
+
 
                     {{input bio as="text"}}
                     {{input author
@@ -207,22 +208,23 @@
         <div class="box-body">
             {{#form-for model wrapper="bootstrap-horizontal"}}
                 {{input title label="标题"}}
-                {{input content1 label="内容"}}
+                {{input contents label="内容"}}
                 {{input password placeholder="请输入密码"}}
                 {{input lastName}}
                 {{checkbox something modelBinding="model" propertyPath="something" elementsBinding="fruits" labelPath="name"}}
                 {{radio something modelBinding="model" propertyPath="something" elementsBinding="fruits" labelPath="name"}}
                 {{input createDate}}
-                {{!--#input title}}
-                    {{label-field propertyBinding="view.property" textBinding="view.fieldLabel"}}
+
+                {{#input title withValidation=true label="内容区域"}}
                     {{bu-editor value=title valueType="contentTxt"}}
-                    {{#if view.showError}}
-                        {{error-field propertyBinding="view.property"}}
-                    {{/if}}
-                    {{#if view.hint}}
-                        {{hint-field propertyBinding="view.property" textBinding="view.hint"}}
-                    {{/if}}
-                {{/input--}}
+                {{/input}}
+
+                {{#input title withValidation=true}}
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                        {{input-field propertyBinding="view.property" inputOptionsBinding="view.inputOptionsValues"}}
+                    </div>
+                {{/input}}
 
                 {{input bio as="text"}}
                 {{input author
