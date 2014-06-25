@@ -4,7 +4,8 @@ Router.map(function() {
   this.route('component-test');
   this.route('helper-test');
   this.resource("form",function(){
-
+    this.route('datepicker');
+    this.route('complex');
   });
 });
 

@@ -13,10 +13,6 @@
 !/vendor/qunit-shim.js
 !/vendor/admin-lte
 
-/admin-lte/js
-!/admin-lte/js
-
-
 # misc
 /.sass-cache
 /connect.lock
