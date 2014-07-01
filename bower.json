@@ -15,8 +15,5 @@
     "font-awesome": "~4.1.0",
     "bricksui": "*",
     "bootstrap3-datetimepicker": "~3.0.0"
-  },
-  "resolutions": {
-    "ember": "~1.5.0"
   }
 }

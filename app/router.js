@@ -6,6 +6,7 @@ Router.map(function() {
   this.resource("form",function(){
     this.route('datepicker');
     this.route('complex');
+    this.route('tree');
   });
 });
 

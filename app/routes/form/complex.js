@@ -19,7 +19,7 @@ export default Ember.Route.extend({
   },
   actions:{
     translate:function(lang){
-      BricksUI.I18n.setByLang(lang,true);
+      BricksUI.I18n.setLang(lang);
     }
   }
 
