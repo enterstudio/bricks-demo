@@ -7,6 +7,7 @@ Router.map(function() {
     this.route('datepicker');
     this.route('complex');
     this.route('tree');
+    this.route('daterange');
   });
 });
 

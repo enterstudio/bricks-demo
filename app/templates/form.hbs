@@ -1,5 +1,9 @@
-<br/>
-{{#link-to 'form.tree'}}树组件{{/link-to}}
-{{#link-to "form.complex"}}综合示例{{/link-to}}
-{{#link-to "form.datepicker"}}日历组件{{/link-to}}
-{{outlet}}
+<ul class="nav nav-pills bottom-border">
+    {{#link-to "form.complex" tagName="li"}}<a href="#">综合示例</a>{{/link-to}}
+    {{#link-to 'form.tree' tagName="li"}}<a href="#">树组件</a>{{/link-to}}
+    {{#link-to "form.datepicker" tagName="li"}}<a href="#">日历组件</a>{{/link-to}}
+    {{#link-to "form.daterange" tagName="li"}}<a href="#">时间区间组件</a>{{/link-to}}
+</ul>
+<section class="content">
+    {{outlet}}
+</section>

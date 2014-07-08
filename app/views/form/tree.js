@@ -27,7 +27,7 @@ export default Ember.View.extend({
       }
     });
     this.set('zNodes', [
-      { id:1, pId:0, name:"根 Root", open:true},
+      { id:1, pId:0, name:"根 Root", open:false},
       { id:11, pId:1, name:"父节点 1-1", open:true},
       { id:111, pId:11, name:"叶子节点 1-1-1"},
       { id:112, pId:11, name:"叶子节点 1-1-2"},
@@ -38,7 +38,7 @@ export default Ember.View.extend({
       { id:122, pId:12, name:"叶子节点 1-2-2"},
       { id:123, pId:12, name:"叶子节点 1-2-3"},
       { id:124, pId:12, name:"叶子节点 1-2-4"},
-      { id:13, pId:1, name:"父节点 1-3", open:true},
+      { id:13, pId:1, name:"父节点 1-3", open:false},
       { id:131, pId:13, name:"叶子节点 1-3-1"},
       { id:132, pId:13, name:"叶子节点 1-3-2"},
       { id:133, pId:13, name:"叶子节点 1-3-3"},
