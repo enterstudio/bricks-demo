@@ -1,24 +1,3 @@
-<section class="content-header">
-    <h1>
-        General Form Elements
-        <small>Preview</small>
-    </h1>
-    <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">General Elements</li>
-    </ol>
-</section>
-
-<section class="content">
-<div class="row">
-    <div class="col-md-6">
-        <div class="btn-group">
-            <button type="button" class="btn btn-default" {{action translate 'zh-cn'}}>中文</button>
-            <button type="button" class="btn btn-default" {{action translate 'en'}}>ENGLISH</button>
-        </div>
-    </div>
-</div>
 <div class="row">
 <!-- left column -->
 <div class="col-md-6">
@@ -26,7 +5,8 @@
     <div class="box box-primary">
         <div class="box-header">
             <h3 class="box-title">bootstrap style</h3>
-        </div><!-- /.box-header -->
+        </div>
+        <!-- /.box-header -->
         <!-- form start -->
         <form role="form">
             <div class="box-body">
@@ -47,7 +27,7 @@
                     {{/input}}
 
                     {{#input title withValidation=true}}
-                         {{bu-editor value=title valueType="contentTxt"}}
+                        {{bu-editor value=title valueType="contentTxt"}}
                     {{/input}}
 
 
@@ -69,11 +49,13 @@
                     </div>
 
                 {{/form-for}}
-            </div><!-- /.box-body -->
+            </div>
+            <!-- /.box-body -->
 
 
         </form>
-    </div><!-- /.box -->
+    </div>
+    <!-- /.box -->
 
     <!-- Form Element sizes -->
     <div class="box box-success">
@@ -86,8 +68,10 @@
             <input class="form-control" type="text" placeholder="Default input">
             <br>
             <input class="form-control input-sm" type="text" placeholder=".input-sm">
-        </div><!-- /.box-body -->
-    </div><!-- /.box -->
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
 
     <div class="box box-danger">
         <div class="box-header">
@@ -105,8 +89,10 @@
                     <input type="text" class="form-control" placeholder=".col-xs-5">
                 </div>
             </div>
-        </div><!-- /.box-body -->
-    </div><!-- /.box -->
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
 
     <!-- Input addon -->
     <div class="box box-info">
@@ -119,11 +105,13 @@
                 <input type="text" class="form-control" placeholder="Username">
             </div>
             <br>
+
             <div class="input-group">
                 <input type="text" class="form-control">
                 <span class="input-group-addon">.00</span>
             </div>
             <br>
+
             <div class="input-group">
                 <span class="input-group-addon">$</span>
                 <input type="text" class="form-control">
@@ -131,16 +119,19 @@
             </div>
 
             <h4>With icons</h4>
+
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                 <input type="text" class="form-control" placeholder="Email">
             </div>
             <br>
+
             <div class="input-group">
                 <input type="text" class="form-control">
                 <span class="input-group-addon"><i class="fa fa-check"></i></span>
             </div>
             <br>
+
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
                 <input type="text" class="form-control">
@@ -148,30 +139,49 @@
             </div>
 
             <h4>With checkbox and radio inputs</h4>
+
             <div class="row">
                 <div class="col-lg-6">
                     <div class="input-group">
                                                 <span class="input-group-addon">
-                                                    <div class="icheckbox_minimal" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background-color: rgb(255, 255, 255); border: 0px; opacity: 0; background-position: initial initial; background-repeat: initial initial;"></ins></div>
+                                                    <div class="icheckbox_minimal" aria-checked="false"
+                                                         aria-disabled="false" style="position: relative;"><input
+                                                            type="checkbox" style="position: absolute; opacity: 0;">
+                                                        <ins class="iCheck-helper"
+                                                             style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background-color: rgb(255, 255, 255); border: 0px; opacity: 0; background-position: initial initial; background-repeat: initial initial;"></ins>
+                                                    </div>
                                                 </span>
                         <input type="text" class="form-control">
-                    </div><!-- /input-group -->
-                </div><!-- /.col-lg-6 -->
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <!-- /.col-lg-6 -->
                 <div class="col-lg-6">
                     <div class="input-group">
                                                 <span class="input-group-addon">
-                                                    <div class="iradio_minimal" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="radio" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background-color: rgb(255, 255, 255); border: 0px; opacity: 0; background-position: initial initial; background-repeat: initial initial;"></ins></div>
+                                                    <div class="iradio_minimal" aria-checked="false"
+                                                         aria-disabled="false" style="position: relative;"><input
+                                                            type="radio" style="position: absolute; opacity: 0;">
+                                                        <ins class="iCheck-helper"
+                                                             style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background-color: rgb(255, 255, 255); border: 0px; opacity: 0; background-position: initial initial; background-repeat: initial initial;"></ins>
+                                                    </div>
                                                 </span>
                         <input type="text" class="form-control">
-                    </div><!-- /input-group -->
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <!-- /.col-lg-6 -->
+            </div>
+            <!-- /.row -->
 
             <h4>With buttons</h4>
+
             <p class="margin">Large: <code>.input-group.input-group-lg</code></p>
+
             <div class="input-group input-group-lg">
                 <div class="input-group-btn">
-                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Action <span class="fa fa-caret-down"></span></button>
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Action <span
+                            class="fa fa-caret-down"></span></button>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -179,34 +189,45 @@
                         <li class="divider"></li>
                         <li><a href="#">Separated link</a></li>
                     </ul>
-                </div><!-- /btn-group -->
+                </div>
+                <!-- /btn-group -->
                 <input type="text" class="form-control">
-            </div><!-- /input-group -->
+            </div>
+            <!-- /input-group -->
             <p class="margin">Normal</p>
+
             <div class="input-group">
                 <div class="input-group-btn">
                     <button type="button" class="btn btn-danger">Action</button>
-                </div><!-- /btn-group -->
+                </div>
+                <!-- /btn-group -->
                 <input type="text" class="form-control">
-            </div><!-- /input-group -->
+            </div>
+            <!-- /input-group -->
             <p class="margin">Small <code>.input-group.input-group-sm</code></p>
+
             <div class="input-group input-group-sm">
                 <input type="text" class="form-control">
                                         <span class="input-group-btn">
                                             <button class="btn btn-info btn-flat" type="button">Go!</button>
                                         </span>
-            </div><!-- /input-group -->
-        </div><!-- /.box-body -->
-    </div><!-- /.box -->
+            </div>
+            <!-- /input-group -->
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
 
-</div><!--/.col (left) -->
+</div>
+<!--/.col (left) -->
 <!-- right column -->
 <div class="col-md-6">
     <!-- general form elements disabled -->
     <div class="box box-warning">
         <div class="box-header">
             <h3 class="box-title">bootstrap-horizontal</h3>
-        </div><!-- /.box-header -->
+        </div>
+        <!-- /.box-header -->
         <div class="box-body">
             {{#form-for model wrapper="bootstrap-horizontal"}}
                 {{input title label="标题"}}
@@ -243,8 +264,10 @@
                 }}
                 {{submit "提交"}}
             {{/form-for}}
-        </div><!-- /.box-body -->
-    </div><!-- /.box -->
-</div><!--/.col (right) -->
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</div>
+<!--/.col (right) -->
 </div>   <!-- /.row -->
-</section>

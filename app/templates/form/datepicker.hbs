@@ -1,94 +1,71 @@
-<section class="content-header">
-    <h1>
-        DatePicker Component
-        <small>Preview</small>
-    </h1>
-    <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">General Elements</li>
-    </ol>
-</section>
-
-<section class="content">
 <div class="row">
-<!-- left column -->
-<div class="col-md-6">
-    <!-- general form elements -->
-    <div class="box box-primary">
-        <div class="box-header">
-            <h3 class="box-title">日期选择</h3>
-        </div><!-- /.box-header -->
-        <!-- form start -->
-        <div class="box-body">
-            <form role="form">
-                <div class="form-group">
-                    ISOString: {{d1}}
-                    {{bu-datepicker value=d1 options='{"pickTime":false}'}}
-                </div>
-            </form>
-        </div><!-- /.box-body -->
-    </div><!-- /.box -->
-
-    <!-- Form Element sizes -->
-    <!-- /.box -->
-
-    <div class="box box-danger">
-        <div class="box-header">
-            <h3 class="box-title">时间选择</h3>
+    <div class="col-md-6">
+        <div class="box box-primary">
+            <div class="box-header">
+                <h3 class="box-title">日期选择</h3>
+            </div>
+            <div class="box-body">
+                <form role="form">
+                    <div class="form-group">
+                        ISOString: {{d1}}
+                        {{bu-datepicker value=d1 options='{"pickTime":false}'}}
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="box-body">
-            <form role="form">
-                <div class="form-group">
-                    ISOString: {{d2}}
-                    {{bu-datepicker value=d2 options='{"pickDate":false}'}}
-                </div>
-            </form>
-        </div><!-- /.box-body -->
-    </div><!-- /.box -->
 
-    <div class="box box-warning">
-        <div class="box-header">
-            <h3 class="box-title">时间日期选择</h3>
+        <div class="box box-danger">
+            <div class="box-header">
+                <h3 class="box-title">时间选择</h3>
+            </div>
+            <div class="box-body">
+                <form role="form">
+                    <div class="form-group">
+                        ISOString: {{d2}}
+                        {{bu-datepicker value=d2 options='{"pickDate":false}'}}
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="box-body">
-            <form role="form">
-                <div class="form-group">
-                    ISOString: {{d3}}
-                    {{bu-datepicker value=d3}}
-                </div>
-            </form>
-        </div><!-- /.box-body -->
-    </div><!-- /.box -->
 
-    <div class="box box-warning">
-        <div class="box-header">
-            <h3 class="box-title">默认时间日期</h3>
+        <div class="box box-warning">
+            <div class="box-header">
+                <h3 class="box-title">时间日期选择</h3>
+            </div>
+            <div class="box-body">
+                <form role="form">
+                    <div class="form-group">
+                        ISOString: {{d3}}
+                        {{bu-datepicker value=d3}}
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="box-body">
-            <form role="form">
-                <div class="form-group">
-                    ISOString: {{d4}}
-                    {{bu-datepicker value=d4 options='{"defaultDate":"2013-11-11"}'}}
-                </div>
-            </form>
-        </div><!-- /.box-body -->
-    </div><!-- /.box -->
-
-    <div class="box box-warning">
-        <div class="box-header">
-            <h3 class="box-title">禁选日期</h3>
+        <div class="box box-warning">
+            <div class="box-header">
+                <h3 class="box-title">默认时间日期</h3>
+            </div>
+            <div class="box-body">
+                <form role="form">
+                    <div class="form-group">
+                        ISOString: {{d4}}
+                        {{bu-datepicker value=d4 options='{"defaultDate":"2013-11-11"}'}}
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="box-body">
-            <form role="form">
-                <div class="form-group">
-                    ISOString: {{d5}}
-                    {{bu-datepicker value=d5 options='{"defaultDate":"2013-11-11","disabledDates":["11/12/2013","11/13/2013","11/14/2013"]}'}}
-                </div>
-            </form>
-        </div><!-- /.box-body -->
-    </div><!-- /.box -->
-
-</div><!--/.col (left) -->
+        <div class="box box-warning">
+            <div class="box-header">
+                <h3 class="box-title">禁选日期</h3>
+            </div>
+            <div class="box-body">
+                <form role="form">
+                    <div class="form-group">
+                        ISOString: {{d5}}
+                        {{bu-datepicker value=d5 options='{"defaultDate":"2013-11-11","disabledDates":["11/12/2013","11/13/2013","11/14/2013"]}'}}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>   <!-- /.row -->
-</section>

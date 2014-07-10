@@ -229,7 +229,7 @@ module.exports = function(grunt) {
                      'less:compile',
                      'stylus:compile',
                      'copy:cssToResult',
-                     'copy:fonts',
+                     'copy:vendors',
                      'autoprefixer:app'
                      ]));
 
