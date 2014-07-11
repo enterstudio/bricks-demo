@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="box box-primary">
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+                <div class="box-body">
+                </div>
+                <div class="box box-danger">
+                    <div class="box-header">
+                        <h3 class="box-title">tab组件的基本用法</h3>
+                    </div>
+                    <div class="box-body">
+                        <form role="form">
+                            <div class="form-group">
+
+                                {{bu-tabs id="tabs1" contentBinding="tabsMeta" default="Foo"}}
+                                {{bu-tabs-panes items-id="tabs1" contentBinding="tabsMeta"}}
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="box box-warning">
+                    <div class="box-header">
+                        <h3 class="box-title">tab组件与路由结合</h3>
+                    </div>
+                    <div class="box-body">
+                        <form role="form">
+                            <div class="form-group">
+                                {{bu-tabs contentBinding="tabsRoute"}}
+                                {{outlet}}
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+        </div>
+        </form>
+    </div>
+</div>
+</div>
